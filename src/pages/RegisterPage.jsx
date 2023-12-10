@@ -21,7 +21,7 @@ function RegisterPage(){
     })
     return(
         <div className='flex items-center justify-center h-screen'>
-            <div className='bg-blue-800 max-w-md p-10 rounded-md'>
+            <div className='bg-zinc-800 max-w-md p-10 rounded-md'>
                 {
                     registerErrors.map( (error, i)=>(
                         <div className='bg-red-500 p-2 my-2 text-white' key={i}>
@@ -33,7 +33,7 @@ function RegisterPage(){
                     <h1 className='text-3xl font-bold my-2'>Register</h1>
                     <label htmlFor="username">Usuario</label>
                     <input type="text" 
-                    className='w-full bg-green-700 text-white px-4 py-2 rounded-md my-2' 
+                    className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2' 
                     placeholder='Username' 
                     {
                         ...register("username", {required: true, minLength: 5})
@@ -48,7 +48,7 @@ function RegisterPage(){
                     
                     <label htmlFor="email">Email</label>
                     <input type="email" name='email' 
-                    className='w-full bg-green-700 text-white px-4 py-2 rounded-md my-2' 
+                    className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2' 
                     placeholder='Email' 
                     {
                         ...register("email",{required:true})
@@ -60,7 +60,7 @@ function RegisterPage(){
                     
                     <label htmlFor="email">Password</label>
                     <input type="password"  name='password'
-                    className='w-full bg-green-700 text-white px-4 py-2 rounded-md my-2' 
+                    className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2' 
                     placeholder='Password' 
                     {
                         ...register("password", {required:true, minLength: 6})

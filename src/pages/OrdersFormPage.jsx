@@ -5,12 +5,11 @@ import { IoBagAdd } from 'react-icons/io5';
 import { useOrders } from '../context/OrdersContext';
 
 const OrdersFormPage = () => {
-  const { register, handleSubmit, setValue, formState: { errors } } = useForm();
-  {
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm({
     defaultValues: {
-      Product: "Pedido"
+      Product: "prueba"
     }
-  };
+  });
   const { createOrder, getOrderById, editOrder } = useOrders();
   const { id } = useParams();
   const navigate = useNavigate();
@@ -43,7 +42,7 @@ const OrdersFormPage = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="bg-blue-800 max-w-md w-full p-10 rounded-md">
+      <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
         <form onSubmit={onSubmit}>
           <h1 className="text-3xl font-bold my-2">Pedidos</h1>
           <label htmlFor="name">Nombre</label>
