@@ -5,11 +5,12 @@ import { IoBagAdd } from 'react-icons/io5';
 import { useOrders } from '../context/OrdersContext';
 
 const OrdersFormPage = () => {
-  const { register, handleSubmit, setValue, formState: { errors } } = useForm({
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm();
+  {
     defaultValues: {
-      Product:"prueba"
+      Product: String
     }
-  });
+  };
   const { createOrder, getOrderById, editOrder } = useOrders();
   const { id } = useParams();
   const navigate = useNavigate();
