@@ -30,7 +30,7 @@ function LoginPage(){
     })
     return(
         <div className='flex items-center justify-center h-screen'>
-            <div className='bg-zinc-800 max-w-md w-full p-10 rounded-md'>
+            <div className='bg-purple-800 max-w-md w-full p-10 rounded-md'>
                 
                 {
                 signInErrors.map( (error, i)=>(
@@ -43,7 +43,7 @@ function LoginPage(){
                 <h1 className='text-3xl font-bold my-3'>Login</h1>
                 <label htmlFor="email">Email</label>
                 <input type="email" 
-                className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2' 
+                className='w-full bg-pink-700 text-white px-4 py-2 rounded-md my-2' 
                 placeholder='Email' 
                 
                 {
@@ -57,7 +57,7 @@ function LoginPage(){
                 <label htmlFor="password">Password</label>
                 <div className='flex justify-end items-center relative'>
                     <input type={passwordShown? "text":"password"}  name='password'
-                    className='w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2' 
+                    className='w-full bg-pink-700 text-white px-4 py-2 rounded-md my-2' 
                     placeholder='Password' 
                     {
                         ...register("password", {required:true, minLength: 6})

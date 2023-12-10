@@ -42,13 +42,13 @@ const OrdersFormPage = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
+      <div className="bg-sky-800 max-w-md w-full p-10 rounded-md">
         <form onSubmit={onSubmit}>
           <h1 className="text-3xl font-bold my-2">Pedidos</h1>
           <label htmlFor="name">Nombre</label>
           <input
             type="text"
-            className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+            className="w-full bg-blue-700 text-white px-4 py-2 rounded-md my-2"
             placeholder="Nombre del pedido"
             {...register('Product', { required: true })}
             autoFocus
@@ -59,7 +59,7 @@ const OrdersFormPage = () => {
           <input
             type="number"
             step="0.10"
-            className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+            className="w-full bg-blue-700 text-white px-4 py-2 rounded-md my-2"
             placeholder="fecha del pedido"
             {...register('DateOrder', {
               required: true,
@@ -73,7 +73,7 @@ const OrdersFormPage = () => {
           <label htmlFor="Status">Estado</label>
           <input
             type="text"
-            className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+            className="w-full bg-blue-700 text-white px-4 py-2 rounded-md my-2"
             placeholder="Estado del pedido"
             {...register('Status', { required: true })}
           />
