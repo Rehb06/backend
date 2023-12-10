@@ -1,7 +1,7 @@
 function HomePage() {
     return (
         <div className="flex items-center justify-center h-screen">
-            <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
+            <div className="bg-green-800 max-w-md w-full p-10 rounded-md">
                 <h1 className="text-3xl font-bold my-3 text-center">Sistema de productos</h1>
                 <h2 className="text-1xl font-bold my-3 text-center">Lenguajes Web</h2>
 
