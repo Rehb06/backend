@@ -43,7 +43,7 @@ function ProductsFormPage() {
     })
     return (
         <div className='flex items-center justify-center h-screen'>
-        <div className='bg-zinc-800 max-w-md w-full p-10 rounded-md'>
+        <div className='bg-blue-800 max-w-md w-full p-10 rounded-md'>
         <form onSubmit={onSubmit}>
             <h1 className='text-3xl font-bold my-2'>Productos</h1>
             <label htmlFor="name">Nombre</label>

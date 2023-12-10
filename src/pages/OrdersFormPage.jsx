@@ -8,7 +8,7 @@ const OrdersFormPage = () => {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
   {
     defaultValues: {
-      price:0.0
+      Product: "Pedido"
     }
   };
   const { createOrder, getOrderById, editOrder } = useOrders();

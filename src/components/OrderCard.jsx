@@ -30,7 +30,7 @@ function OrderCard( {order}){
                 </div>
             </header>
             <p className='text-slate-300 my-2'>
-                {order.Product}
+                {product.name}
 
             </p>
             <p className='text-slate-300 my-2'>
