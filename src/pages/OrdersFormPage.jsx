@@ -34,7 +34,7 @@ const OrdersFormPage = () => {
       } else {
         await createOrder(data);
       }
-      navigate('/pedidos');
+      navigate('/orders');
     } catch (error) {
       console.error('Error al actualizar el pedido:', error);
       // Manejar el error, mostrar un mensaje al usuario, etc.
