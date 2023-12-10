@@ -7,7 +7,7 @@ import { useOrders } from '../context/OrdersContext';
 const OrdersFormPage = () => {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm({
     defaultValues: {
-      Product: "prueba"
+      Product: "pedido"
     }
   });
   const { createOrder, getOrderById, editOrder } = useOrders();
