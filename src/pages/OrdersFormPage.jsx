@@ -18,7 +18,7 @@ const OrdersFormPage = () => {
     async function loadOrder() {
       if (id) {
         const orderData = await getOrderById(id);
-        setValue('Product', orderData.Product);
+        setValue('Product', orderData.name);
         setValue('DateOrder', orderData.DateOrder);
         setValue('Status', orderData.Status);
       }
