@@ -6,7 +6,7 @@ import { IoTrashBinSharp, IoPencilSharp} from 'react-icons/io5'
 function ProductCard( {product}){
     const {deleteProduct} = useProducts()
     return(
-        <div className='bg-zinc-800 max-w-md w-full p-10 rounded-md'>
+        <div className='bg-orange-800 max-w-md w-full p-10 rounded-md'>
             <header className='flex justify-between'> 
                 <h1 className='text-1xl font-bold'>{product.name}</h1>
                 <div className='flex gap-x-2 items-center'>

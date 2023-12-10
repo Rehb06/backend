@@ -15,7 +15,7 @@ function Navbar(){
     const {isAuthenticated, logout, user} = useAuth();
 
     return(
-        <nav className='bg-zinc-700 my-3 flex justify-between items-start py-5 px-10 rounden-lg'>
+        <nav className='bg-purple-700 my-3 flex justify-between items-start py-5 px-10 rounden-lg'>
             <Link to={
                 isAuthenticated ? '/products' : '/'}
                 
@@ -112,7 +112,7 @@ function Navbar(){
                 <Link
                   to="/orders"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-zinc-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -125,7 +125,7 @@ function Navbar(){
                 <Link
                   to="/add-order"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-zinc-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
