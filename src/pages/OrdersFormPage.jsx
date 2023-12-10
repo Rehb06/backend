@@ -18,7 +18,7 @@ const OrdersFormPage = () => {
     async function loadOrder() {
       if (id) {
         const orderData = await getOrderById(id);
-        setValue('Product', orderData.name);
+        setValue('Product', orderData.Product);
         setValue('DateOrder', orderData.DateOrder);
         setValue('Status', orderData.Status);
       }
@@ -50,7 +50,7 @@ const OrdersFormPage = () => {
             type="text"
             className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
             placeholder="Nombre del pedido"
-            {...register('name', { required: true })}
+            {...register('Product', { required: true })}
             autoFocus
           />
           {errors.name && <div className="text-red-500">Nombre del pedido es requerido</div>}
