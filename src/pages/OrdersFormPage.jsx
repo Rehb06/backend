@@ -8,7 +8,7 @@ const OrdersFormPage = () => {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
   {
     defaultValues: {
-      Product: String
+      price:0.0
     }
   };
   const { createOrder, getOrderById, editOrder } = useOrders();
@@ -34,7 +34,7 @@ const OrdersFormPage = () => {
       } else {
         await createOrder(data);
       }
-      navigate('/orders');
+      navigate('/pedidos');
     } catch (error) {
       console.error('Error al actualizar el pedido:', error);
       // Manejar el error, mostrar un mensaje al usuario, etc.
@@ -43,7 +43,7 @@ const OrdersFormPage = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
+      <div className="bg-blue-800 max-w-md w-full p-10 rounded-md">
         <form onSubmit={onSubmit}>
           <h1 className="text-3xl font-bold my-2">Pedidos</h1>
           <label htmlFor="name">Nombre</label>
